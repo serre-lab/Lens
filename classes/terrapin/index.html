@@ -1,0 +1,2343 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../mud%20turtle/">
+      
+      
+        <link rel="next" href="../box%20turtle/">
+      
+      <link rel="icon" href="../../assets/lens_icon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>Terrapin - Lens</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="../../css/grid.css">
+    
+      <link rel="stylesheet" href="../../css/dashboard.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="dark" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#terrapin-36" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Lens" class="md-header__button md-logo" aria-label="Lens" data-md-component="logo">
+      
+  <img src="../../assets/lens.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lens
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Terrapin
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="dark" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/serre-lab/Lens" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    serre-lab/Lens
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lens" class="md-nav__button md-logo" aria-label="Lens" data-md-component="logo">
+      
+  <img src="../../assets/lens.png" alt="logo">
+
+    </a>
+    Lens
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/serre-lab/Lens" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    serre-lab/Lens
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          ImageNet Classes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          ImageNet Classes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tench/" class="md-nav__link">
+        Tench
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goldfish/" class="md-nav__link">
+        Goldfish
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../great%20white%20shark/" class="md-nav__link">
+        Great white shark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tiger%20shark/" class="md-nav__link">
+        Tiger shark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hammerhead/" class="md-nav__link">
+        Hammerhead
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../electric%20ray/" class="md-nav__link">
+        Electric ray
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stingray/" class="md-nav__link">
+        Stingray
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cock/" class="md-nav__link">
+        Cock
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hen/" class="md-nav__link">
+        Hen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ostrich/" class="md-nav__link">
+        Ostrich
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brambling/" class="md-nav__link">
+        Brambling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goldfinch/" class="md-nav__link">
+        Goldfinch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../house%20finch/" class="md-nav__link">
+        House finch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../junco/" class="md-nav__link">
+        Junco
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indigo%20bunting/" class="md-nav__link">
+        Indigo bunting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../robin/" class="md-nav__link">
+        Robin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bulbul/" class="md-nav__link">
+        Bulbul
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jay/" class="md-nav__link">
+        Jay
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../magpie/" class="md-nav__link">
+        Magpie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chickadee/" class="md-nav__link">
+        Chickadee
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water%20ouzel/" class="md-nav__link">
+        Water ouzel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kite/" class="md-nav__link">
+        Kite
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bald%20eagle/" class="md-nav__link">
+        Bald eagle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vulture/" class="md-nav__link">
+        Vulture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../great%20grey%20owl/" class="md-nav__link">
+        Great grey owl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../European%20fire%20salamander/" class="md-nav__link">
+        European fire salamander
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common%20newt/" class="md-nav__link">
+        Common newt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eft/" class="md-nav__link">
+        Eft
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spotted%20salamander/" class="md-nav__link">
+        Spotted salamander
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../axolotl/" class="md-nav__link">
+        Axolotl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bullfrog/" class="md-nav__link">
+        Bullfrog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tree%20frog/" class="md-nav__link">
+        Tree frog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tailed%20frog/" class="md-nav__link">
+        Tailed frog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loggerhead/" class="md-nav__link">
+        Loggerhead
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leatherback%20turtle/" class="md-nav__link">
+        Leatherback turtle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mud%20turtle/" class="md-nav__link">
+        Mud turtle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Terrapin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Terrapin
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#similar-concepts" class="md-nav__link">
+    Similar concepts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../box%20turtle/" class="md-nav__link">
+        Box turtle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banded%20gecko/" class="md-nav__link">
+        Banded gecko
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common%20iguana/" class="md-nav__link">
+        Common iguana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../American%20chameleon/" class="md-nav__link">
+        American chameleon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whiptail/" class="md-nav__link">
+        Whiptail
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agama/" class="md-nav__link">
+        Agama
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frilled%20lizard/" class="md-nav__link">
+        Frilled lizard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alligator%20lizard/" class="md-nav__link">
+        Alligator lizard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gila%20monster/" class="md-nav__link">
+        Gila monster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../green%20lizard/" class="md-nav__link">
+        Green lizard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../African%20chameleon/" class="md-nav__link">
+        African chameleon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Komodo%20dragon/" class="md-nav__link">
+        Komodo dragon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../African%20crocodile/" class="md-nav__link">
+        African crocodile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../American%20alligator/" class="md-nav__link">
+        American alligator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../triceratops/" class="md-nav__link">
+        Triceratops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thunder%20snake/" class="md-nav__link">
+        Thunder snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ringneck%20snake/" class="md-nav__link">
+        Ringneck snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hognose%20snake/" class="md-nav__link">
+        Hognose snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../green%20snake/" class="md-nav__link">
+        Green snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../king%20snake/" class="md-nav__link">
+        King snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garter%20snake/" class="md-nav__link">
+        Garter snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water%20snake/" class="md-nav__link">
+        Water snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vine%20snake/" class="md-nav__link">
+        Vine snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../night%20snake/" class="md-nav__link">
+        Night snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boa%20constrictor/" class="md-nav__link">
+        Boa constrictor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rock%20python/" class="md-nav__link">
+        Rock python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Indian%20cobra/" class="md-nav__link">
+        Indian cobra
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../green%20mamba/" class="md-nav__link">
+        Green mamba
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sea%20snake/" class="md-nav__link">
+        Sea snake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../horned%20viper/" class="md-nav__link">
+        Horned viper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diamondback/" class="md-nav__link">
+        Diamondback
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sidewinder/" class="md-nav__link">
+        Sidewinder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trilobite/" class="md-nav__link">
+        Trilobite
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../harvestman/" class="md-nav__link">
+        Harvestman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scorpion/" class="md-nav__link">
+        Scorpion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../black%20and%20gold%20garden%20spider/" class="md-nav__link">
+        Black and gold garden spider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../barn%20spider/" class="md-nav__link">
+        Barn spider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../garden%20spider/" class="md-nav__link">
+        Garden spider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../black%20widow/" class="md-nav__link">
+        Black widow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tarantula/" class="md-nav__link">
+        Tarantula
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wolf%20spider/" class="md-nav__link">
+        Wolf spider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tick/" class="md-nav__link">
+        Tick
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../centipede/" class="md-nav__link">
+        Centipede
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../black%20grouse/" class="md-nav__link">
+        Black grouse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ptarmigan/" class="md-nav__link">
+        Ptarmigan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ruffed%20grouse/" class="md-nav__link">
+        Ruffed grouse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prairie%20chicken/" class="md-nav__link">
+        Prairie chicken
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../peacock/" class="md-nav__link">
+        Peacock
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quail/" class="md-nav__link">
+        Quail
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partridge/" class="md-nav__link">
+        Partridge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../African%20grey/" class="md-nav__link">
+        African grey
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macaw/" class="md-nav__link">
+        Macaw
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sulphur-crested%20cockatoo/" class="md-nav__link">
+        Sulphur-crested cockatoo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lorikeet/" class="md-nav__link">
+        Lorikeet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coucal/" class="md-nav__link">
+        Coucal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bee%20eater/" class="md-nav__link">
+        Bee eater
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hornbill/" class="md-nav__link">
+        Hornbill
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hummingbird/" class="md-nav__link">
+        Hummingbird
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jacamar/" class="md-nav__link">
+        Jacamar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../toucan/" class="md-nav__link">
+        Toucan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drake/" class="md-nav__link">
+        Drake
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../red-breasted%20merganser/" class="md-nav__link">
+        Red-breasted merganser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goose/" class="md-nav__link">
+        Goose
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#similar-concepts" class="md-nav__link">
+    Similar concepts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="terrapin-36">Terrapin (36)<a class="headerlink" href="#terrapin-36" title="Permanent link">&para;</a></h1>
+<p>Terrapin (class id 36) has 1 important concepts. The full class name is terrapin.</p>
+<p><a class="md-button columns" href="#">Columns (2/4) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.75 2h5.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 9.25 22h-5.5A1.75 1.75 0 0 1 2 20.25V3.75C2 2.784 2.784 2 3.75 2Zm11 0h5.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22h-5.5A1.75 1.75 0 0 1 13 20.25V3.75c0-.966.784-1.75 1.75-1.75ZM3.5 3.75v16.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.25.25 0 0 0-.25.25Zm11 0v16.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.25.25 0 0 0-.25.25Z"/></svg></span></a></p>
+<hr />
+<div class="boussole-importance">
+    <canvas id="myChart"> </canvas>
+</div>
+
+<div class="concept-proximity">
+    <canvas id="myChart2"> </canvas>
+</div>
+
+<div class="classes-proximity">
+<b>Concept proximity to other classes</b>
+<div class="classes-proximity-info">
+</div>
+
+</div>
+
+<div class="strategic-cluster" style='position:relative'>
+    <canvas id="myChart3"> </canvas>
+    <div class="image-hover" style="display:none">
+        <img id="img-tooltip" src="">
+    </div>
+</div>
+
+<div class="feature-viz-intro">
+    <div class="gallery">
+
+<div class="gallery-container-img" style="border-color: rgba(210,40,95, 1.0)"  id="card-1">
+    <span style="color: rgba(210,40,95, 1.0)"><small>Concept</small> 1 (<small>Importance</small> 70%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_1.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-7">
+    <span> <small>Concept</small> 7 (<small>Importance</small> 7%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_7.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-8">
+    <span> <small>Concept</small> 8 (<small>Importance</small> 6%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_8.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-0">
+    <span> <small>Concept</small> 0 (<small>Importance</small> 5%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_0.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-3">
+    <span> <small>Concept</small> 3 (<small>Importance</small> 4%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_3.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-4">
+    <span> <small>Concept</small> 4 (<small>Importance</small> 3%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_4.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-9">
+    <span> <small>Concept</small> 9 (<small>Importance</small> 0%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_9.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-6">
+    <span> <small>Concept</small> 6 (<small>Importance</small> 0%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_6.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-5">
+    <span> <small>Concept</small> 5 (<small>Importance</small> 0%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_5.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+<div class="gallery-container-img" id="card-2">
+    <span> <small>Concept</small> 2 (<small>Importance</small> 0%)</span>
+    <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_2.png" class="gallery-img">
+    <div class="hidden-images">
+        <img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_0.png" class="surprise-img img1"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_1.png" class="surprise-img img2"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_2.png" class="surprise-img img3"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_3.png" class="surprise-img img4"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_4.png" class="surprise-img img5"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_5.png" class="surprise-img img6"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_6.png" class="surprise-img img7"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_7.png" class="surprise-img img8"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_8.png" class="surprise-img img9"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_9.png" class="surprise-img img10">
+    </div>
+</div>
+
+    </div>
+</div>
+
+<details>
+    <summary>
+        <span class="important">Concept 1</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_1.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_1_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 7</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_7.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_7_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 8</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_8.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_8_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 0</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_0.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_0_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 3</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_3.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_3_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 4</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_4.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_4_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 9</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_9.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_9_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 6</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_6.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_6_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 5</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_5.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_5_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<details>
+    <summary>
+        <span class="">Concept 2</span>
+    </summary>
+
+    <div class="duo-gallery">
+        <div class="left">
+            <div class="gallery-container-img">
+                <img src="https://storage.googleapis.com/serrelab/loupe/fviz/36_2.png" class="gallery-img">
+            </div>
+        </div>
+        <div class="right">
+            <div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_0.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_1.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_2.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_3.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_4.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_5.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_6.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_7.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_8.png" class="gallery-img"></div><div class="gallery-container-img"><img src="https://storage.googleapis.com/serrelab/loupe/crops/36_2_9.png" class="gallery-img"></div>
+        </div>
+    </div>
+</details>
+
+<h2 id="similar-concepts">Similar concepts<a class="headerlink" href="#similar-concepts" title="Permanent link">&para;</a></h2>
+<p>We have found 12 similar concepts between the class terrapin and other classes.</p>
+<div>
+Here are those concepts:
+</div>
+<div> <a href='/Lens/classes/bullfrog'>Concept 4 is similar to the concept 3 of bullfrog (30)</a> </div>
+<div> <a href='/Lens/classes/mud turtle'>Concept 1 is similar to the concept 1 of mud turtle (35)</a> </div>
+<div> <a href='/Lens/classes/mud turtle'>Concept 0 is similar to the concept 2 of mud turtle (35)</a> </div>
+<div> <a href='/Lens/classes/mud turtle'>Concept 4 is similar to the concept 8 of mud turtle (35)</a> </div>
+<div> <a href='/Lens/classes/box turtle'>Concept 1 is similar to the concept 0 of box turtle (37)</a> </div>
+<div> <a href='/Lens/classes/American alligator'>Concept 4 is similar to the concept 2 of American alligator (50)</a> </div>
+<div> <a href='/Lens/classes/water snake'>Concept 4 is similar to the concept 2 of water snake (58)</a> </div>
+<div> <a href='/Lens/classes/platypus'>Concept 4 is similar to the concept 1 of platypus (103)</a> </div>
+<div> <a href='/Lens/classes/flamingo'>Concept 4 is similar to the concept 3 of flamingo (130)</a> </div>
+<div> <a href='/Lens/classes/pelican'>Concept 4 is similar to the concept 6 of pelican (144)</a> </div>
+<div> <a href='/Lens/classes/beaver'>Concept 4 is similar to the concept 1 of beaver (337)</a> </div>
+<div> <a href='/Lens/classes/otter'>Concept 4 is similar to the concept 1 of otter (360)</a> </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    const concept_to_classes = {"0": "With <a href='Lens/classes/rock crab'> rock crab (119) </a>  at <b> 22.29% </b>. <br>With <a href='Lens/classes/mud turtle'> mud turtle (35) </a>  at <b> 19.63% </b>. <br>With <a href='Lens/classes/ringneck snake'> ringneck snake (53) </a>  at <b> 19.42% </b>. <br>With <a href='Lens/classes/fiddler crab'> fiddler crab (120) </a>  at <b> 18.64% </b>. <br>With <a href='Lens/classes/terrapin'> terrapin (36) </a>  at <b> 18.57% </b>. <br>", "1": "With <a href='Lens/classes/box turtle'> box turtle (37) </a>  at <b> 48.75% </b>. <br>With <a href='Lens/classes/terrapin'> terrapin (36) </a>  at <b> 48.29% </b>. <br>With <a href='Lens/classes/mud turtle'> mud turtle (35) </a>  at <b> 45.42% </b>. <br>With <a href='Lens/classes/loggerhead'> loggerhead (33) </a>  at <b> 24.17% </b>. <br>With <a href='Lens/classes/leatherback turtle'> leatherback turtle (34) </a>  at <b> 20.61% </b>. <br>", "3": "With <a href='Lens/classes/zebra'> zebra (340) </a>  at <b> 21.52% </b>. <br>With <a href='Lens/classes/terrapin'> terrapin (36) </a>  at <b> 21.34% </b>. <br>With <a href='Lens/classes/tiger'> tiger (292) </a>  at <b> 18.56% </b>. <br>With <a href='Lens/classes/rock python'> rock python (62) </a>  at <b> 17.85% </b>. <br>With <a href='Lens/classes/garter snake'> garter snake (57) </a>  at <b> 15.74% </b>. <br>", "7": "With <a href='Lens/classes/frilled lizard'> frilled lizard (43) </a>  at <b> 21.97% </b>. <br>With <a href='Lens/classes/terrapin'> terrapin (36) </a>  at <b> 20.55% </b>. <br>With <a href='Lens/classes/Komodo dragon'> Komodo dragon (48) </a>  at <b> 19.81% </b>. <br>With <a href='Lens/classes/common iguana'> common iguana (39) </a>  at <b> 18.91% </b>. <br>With <a href='Lens/classes/agama'> agama (42) </a>  at <b> 17.25% </b>. <br>", "8": "With <a href='Lens/classes/mud turtle'> mud turtle (35) </a>  at <b> 22.95% </b>. <br>With <a href='Lens/classes/trilobite'> trilobite (69) </a>  at <b> 19.86% </b>. <br>With <a href='Lens/classes/terrapin'> terrapin (36) </a>  at <b> 19.45% </b>. <br>With <a href='Lens/classes/leatherback turtle'> leatherback turtle (34) </a>  at <b> 18.74% </b>. <br>With <a href='Lens/classes/loggerhead'> loggerhead (33) </a>  at <b> 17.49% </b>. <br>"}
+    // showing cart on hover
+    const translate_size = 140
+    const carts = [...document.querySelectorAll('.feature-viz-intro .gallery-container-img')]
+
+    carts.map(car => {
+        car.addEventListener("click", (event) => {
+            // show little crops
+            hidden_images = [...car.querySelectorAll(".hidden-images img")]
+            hidden_images.map((img, i) => {
+                theta = i * 2 * Math.PI / hidden_images.length
+                if (img.style.transform == `translate(0px, 0px)` || img.style.transform == ``) {
+                    img.style.transform = `translate(${Math.cos(theta) * translate_size}px, ${Math.sin(theta) * translate_size}px)`
+                    img.style.opacity = 1
+                } else {
+                    img.style.transform = `translate(0px, 0px)`
+                    img.style.opacity = 0
+                }
+                //img.style.transform = `translate(${Math.cos(theta) * translate_size}px, ${Math.sin(theta) * translate_size}px)`
+            })
+            // if possible, show the most similar classes
+            let concept_id = car.id.split('-')[1]
+            if (concept_id in concept_to_classes) {
+                document.querySelector('.classes-proximity-info').innerHTML = concept_to_classes[concept_id]
+                document.querySelector('.classes-proximity').style.borderColor = car.style.borderColor
+                document.querySelector('.classes-proximity').style.opacity = 1.0
+            } else {
+                document.querySelector('.classes-proximity-info').innerHTML = ""
+                document.querySelector('.classes-proximity').style.borderColor = "white"
+                document.querySelector('.classes-proximity').opacity = 0.0
+            }
+        });
+    })
+</script>
+
+<script>
+    // importance chart
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        legend: {
+            display: false
+        },
+        data:  {
+            labels: ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9'],
+            datasets: [ {
+                label: 'Importance',
+                data: [5, 70, 0, 4, 3, 0, 0, 7, 6, 0],
+                backgroundColor: [
+                    "rgba(127, 127, 127, 0.2)","rgba(210,40,95, 1.0)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)"
+                ],
+                borderColor: [
+                    "rgba(127, 127, 127, 0.2)","rgba(210,40,95, 1.0)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)"
+                ],
+                borderWidth: 1
+             }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Concept Importance'
+                }
+            },
+        }
+    });
+</script>
+
+<script>
+    // bubble chart using chart.js
+    const ctx2 = document.getElementById('myChart2').getContext('2d');
+    const myChart2 = new Chart(ctx2, {
+        type: 'bubble',
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Concept Similarity'
+                }
+            },
+            scales: {
+                x: {
+                    display: false,
+                },
+                y: {
+                    display: false,
+                }
+            },
+        },
+        data: {
+            labels: ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9'],
+            datasets: [{
+                label: 'Concept proximity',
+                data: [
+                {x: -48.028785705566406, y: 55.18451690673828, r: 5.0, label: 'C0' },{x: -5.609809875488281, y: 154.84642028808594, r: 5.0, label: 'C1' },{x: 34.07332992553711, y: -89.61416625976562, r: 5.0, label: 'C2' },{x: 4.887436389923096, y: 65.66426086425781, r: 5.0, label: 'C3' },{x: -15.47171401977539, y: -137.95932006835938, r: 5.0, label: 'C4' },{x: 72.44620513916016, y: -171.16937255859375, r: 5.0, label: 'C5' },{x: 129.1825408935547, y: -92.05021667480469, r: 5.0, label: 'C6' },{x: -89.0777359008789, y: 35.6152458190918, r: 5.0, label: 'C7' },{x: -59.942596435546875, y: 112.70862579345703, r: 5.0, label: 'C8' },{x: 79.3101577758789, y: -94.9200210571289, r: 5.0, label: 'C9' }
+                ],
+                backgroundColor: [
+                    "rgba(127, 127, 127, 0.2)","rgba(210,40,95, 1.0)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)"
+                ],
+                borderColor: [
+                    "rgba(127, 127, 127, 0.2)","rgba(210,40,95, 1.0)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)","rgba(127, 127, 127, 0.2)"
+                ],
+                borderWidth: 1
+            }]
+        },
+    });
+
+    const fontSize = Chart.defaults.font.size
+    Chart.register({
+        id: 'permanentLabel',
+        afterDatasetsDraw: (chart, args, options) => {
+            const ctx = chart.ctx
+            ctx.textAlign = 'center'
+            ctx.textBaseline = 'middle'
+
+            chart.data.datasets.forEach((dataset, i) => {
+                const meta = chart.getDatasetMeta(i)
+                if (meta.type !== 'bubble') return
+
+                meta.data.forEach((element, index) => {
+                    const item = dataset.data[index]
+                    const position = element.tooltipPosition()
+                    let theme = document.body.getAttribute('data-md-color-scheme')
+                    ctx.fillStyle = '#000000'
+                    let label = item.label ? item.label.toString() : ''
+                    ctx.fillText(label, position.x, position.y - item.r - fontSize)
+                })
+            })
+        },
+    })
+</script>
+
+<script>
+    const images_ids = ['n01667778_10024.JPEG', 'n01667778_10032.JPEG', 'n01667778_1009.JPEG', 'n01667778_10097.JPEG', 'n01667778_10122.JPEG', 'n01667778_10136.JPEG', 'n01667778_10180.JPEG', 'n01667778_10186.JPEG', 'n01667778_1019.JPEG', 'n01667778_10212.JPEG', 'n01667778_10289.JPEG', 'n01667778_1029.JPEG', 'n01667778_10350.JPEG', 'n01667778_10357.JPEG', 'n01667778_1036.JPEG', 'n01667778_10405.JPEG', 'n01667778_10408.JPEG', 'n01667778_10411.JPEG', 'n01667778_10414.JPEG', 'n01667778_10425.JPEG', 'n01667778_10497.JPEG', 'n01667778_10505.JPEG', 'n01667778_10519.JPEG', 'n01667778_1055.JPEG', 'n01667778_10563.JPEG', 'n01667778_10603.JPEG', 'n01667778_1064.JPEG', 'n01667778_10668.JPEG', 'n01667778_10673.JPEG', 'n01667778_10734.JPEG', 'n01667778_10795.JPEG', 'n01667778_108.JPEG', 'n01667778_10816.JPEG', 'n01667778_10819.JPEG', 'n01667778_10836.JPEG', 'n01667778_1087.JPEG', 'n01667778_10881.JPEG', 'n01667778_10893.JPEG', 'n01667778_10917.JPEG', 'n01667778_1095.JPEG', 'n01667778_10967.JPEG', 'n01667778_10971.JPEG', 'n01667778_1098.JPEG', 'n01667778_10986.JPEG', 'n01667778_1101.JPEG', 'n01667778_11013.JPEG', 'n01667778_1102.JPEG', 'n01667778_11038.JPEG', 'n01667778_11052.JPEG', 'n01667778_11075.JPEG', 'n01667778_11078.JPEG', 'n01667778_11094.JPEG', 'n01667778_11131.JPEG', 'n01667778_11152.JPEG', 'n01667778_11162.JPEG', 'n01667778_11172.JPEG', 'n01667778_11221.JPEG', 'n01667778_11260.JPEG', 'n01667778_11268.JPEG', 'n01667778_11332.JPEG', 'n01667778_11342.JPEG', 'n01667778_11372.JPEG', 'n01667778_11379.JPEG', 'n01667778_11409.JPEG', 'n01667778_1142.JPEG', 'n01667778_11430.JPEG', 'n01667778_11431.JPEG', 'n01667778_11441.JPEG', 'n01667778_11487.JPEG', 'n01667778_11505.JPEG', 'n01667778_11513.JPEG', 'n01667778_11564.JPEG', 'n01667778_11590.JPEG', 'n01667778_11595.JPEG', 'n01667778_11630.JPEG', 'n01667778_11639.JPEG', 'n01667778_1164.JPEG', 'n01667778_11654.JPEG', 'n01667778_1166.JPEG', 'n01667778_11662.JPEG', 'n01667778_11669.JPEG', 'n01667778_11692.JPEG', 'n01667778_11723.JPEG', 'n01667778_1173.JPEG', 'n01667778_11752.JPEG', 'n01667778_11783.JPEG', 'n01667778_11803.JPEG', 'n01667778_1184.JPEG', 'n01667778_1185.JPEG', 'n01667778_11872.JPEG', 'n01667778_11883.JPEG', 'n01667778_1189.JPEG', 'n01667778_11915.JPEG', 'n01667778_11958.JPEG', 'n01667778_11974.JPEG', 'n01667778_12001.JPEG', 'n01667778_12003.JPEG', 'n01667778_12008.JPEG', 'n01667778_12019.JPEG', 'n01667778_12047.JPEG', 'n01667778_1205.JPEG', 'n01667778_12060.JPEG', 'n01667778_1207.JPEG', 'n01667778_12078.JPEG', 'n01667778_1208.JPEG', 'n01667778_12100.JPEG', 'n01667778_12105.JPEG', 'n01667778_1211.JPEG', 'n01667778_12119.JPEG', 'n01667778_12182.JPEG', 'n01667778_12200.JPEG', 'n01667778_1222.JPEG', 'n01667778_12230.JPEG', 'n01667778_12252.JPEG', 'n01667778_12283.JPEG', 'n01667778_12321.JPEG', 'n01667778_12363.JPEG', 'n01667778_12364.JPEG', 'n01667778_12369.JPEG', 'n01667778_12382.JPEG', 'n01667778_12409.JPEG', 'n01667778_12415.JPEG', 'n01667778_12437.JPEG', 'n01667778_12444.JPEG', 'n01667778_12481.JPEG', 'n01667778_12482.JPEG', 'n01667778_12487.JPEG', 'n01667778_12555.JPEG', 'n01667778_12581.JPEG', 'n01667778_12584.JPEG', 'n01667778_12606.JPEG', 'n01667778_12654.JPEG', 'n01667778_12702.JPEG', 'n01667778_12753.JPEG', 'n01667778_1280.JPEG', 'n01667778_12831.JPEG', 'n01667778_12835.JPEG', 'n01667778_12844.JPEG', 'n01667778_12853.JPEG', 'n01667778_12857.JPEG', 'n01667778_12881.JPEG', 'n01667778_12897.JPEG', 'n01667778_12911.JPEG', 'n01667778_12941.JPEG', 'n01667778_12954.JPEG', 'n01667778_12980.JPEG', 'n01667778_13003.JPEG', 'n01667778_13017.JPEG', 'n01667778_13071.JPEG', 'n01667778_1308.JPEG', 'n01667778_1309.JPEG', 'n01667778_13090.JPEG', 'n01667778_13109.JPEG', 'n01667778_13148.JPEG', 'n01667778_13150.JPEG', 'n01667778_13185.JPEG', 'n01667778_132.JPEG', 'n01667778_13212.JPEG', 'n01667778_13215.JPEG', 'n01667778_13286.JPEG', 'n01667778_1330.JPEG', 'n01667778_13312.JPEG', 'n01667778_13362.JPEG', 'n01667778_13371.JPEG', 'n01667778_13388.JPEG', 'n01667778_13391.JPEG', 'n01667778_134.JPEG', 'n01667778_13423.JPEG', 'n01667778_13427.JPEG', 'n01667778_13529.JPEG', 'n01667778_1354.JPEG', 'n01667778_13565.JPEG', 'n01667778_13619.JPEG', 'n01667778_13621.JPEG', 'n01667778_13622.JPEG', 'n01667778_13627.JPEG', 'n01667778_1364.JPEG', 'n01667778_13652.JPEG', 'n01667778_13659.JPEG', 'n01667778_13687.JPEG', 'n01667778_13818.JPEG', 'n01667778_13822.JPEG', 'n01667778_1388.JPEG', 'n01667778_13891.JPEG', 'n01667778_1390.JPEG', 'n01667778_13906.JPEG', 'n01667778_13908.JPEG', 'n01667778_13938.JPEG', 'n01667778_13951.JPEG', 'n01667778_13964.JPEG', 'n01667778_1399.JPEG', 'n01667778_14002.JPEG', 'n01667778_14021.JPEG', 'n01667778_14066.JPEG', 'n01667778_14106.JPEG', 'n01667778_14150.JPEG', 'n01667778_14189.JPEG', 'n01667778_142.JPEG', 'n01667778_1422.JPEG', 'n01667778_1426.JPEG', 'n01667778_14331.JPEG', 'n01667778_14364.JPEG', 'n01667778_14402.JPEG', 'n01667778_14408.JPEG', 'n01667778_14417.JPEG', 'n01667778_1443.JPEG', 'n01667778_1445.JPEG', 'n01667778_14452.JPEG', 'n01667778_14481.JPEG', 'n01667778_1451.JPEG', 'n01667778_14515.JPEG', 'n01667778_14527.JPEG', 'n01667778_1454.JPEG', 'n01667778_14542.JPEG', 'n01667778_14576.JPEG', 'n01667778_14601.JPEG', 'n01667778_14626.JPEG', 'n01667778_1463.JPEG', 'n01667778_14654.JPEG', 'n01667778_1469.JPEG', 'n01667778_14696.JPEG', 'n01667778_14744.JPEG', 'n01667778_14797.JPEG', 'n01667778_14808.JPEG', 'n01667778_14911.JPEG', 'n01667778_14973.JPEG', 'n01667778_1500.JPEG', 'n01667778_15012.JPEG', 'n01667778_15066.JPEG', 'n01667778_15115.JPEG', 'n01667778_1516.JPEG', 'n01667778_1517.JPEG', 'n01667778_152.JPEG', 'n01667778_15243.JPEG', 'n01667778_15247.JPEG', 'n01667778_15342.JPEG', 'n01667778_1539.JPEG', 'n01667778_15463.JPEG', 'n01667778_15506.JPEG', 'n01667778_156.JPEG', 'n01667778_15612.JPEG', 'n01667778_15640.JPEG', 'n01667778_15652.JPEG', 'n01667778_1566.JPEG', 'n01667778_15660.JPEG', 'n01667778_15681.JPEG', 'n01667778_15698.JPEG', 'n01667778_15726.JPEG', 'n01667778_1576.JPEG', 'n01667778_15767.JPEG', 'n01667778_1579.JPEG', 'n01667778_15827.JPEG', 'n01667778_1584.JPEG', 'n01667778_15864.JPEG', 'n01667778_15877.JPEG', 'n01667778_1589.JPEG', 'n01667778_159.JPEG', 'n01667778_15900.JPEG', 'n01667778_15959.JPEG', 'n01667778_15965.JPEG', 'n01667778_1597.JPEG', 'n01667778_1601.JPEG', 'n01667778_1603.JPEG', 'n01667778_16033.JPEG', 'n01667778_16034.JPEG', 'n01667778_1604.JPEG', 'n01667778_16052.JPEG', 'n01667778_1607.JPEG', 'n01667778_16096.JPEG', 'n01667778_16133.JPEG', 'n01667778_16158.JPEG', 'n01667778_16183.JPEG', 'n01667778_16239.JPEG', 'n01667778_16250.JPEG', 'n01667778_16281.JPEG', 'n01667778_16285.JPEG', 'n01667778_16294.JPEG', 'n01667778_16295.JPEG', 'n01667778_163.JPEG', 'n01667778_16338.JPEG', 'n01667778_16356.JPEG', 'n01667778_16387.JPEG', 'n01667778_16448.JPEG', 'n01667778_1654.JPEG', 'n01667778_16581.JPEG', 'n01667778_16584.JPEG', 'n01667778_1660.JPEG', 'n01667778_16611.JPEG', 'n01667778_16666.JPEG', 'n01667778_16705.JPEG', 'n01667778_16814.JPEG', 'n01667778_16828.JPEG', 'n01667778_1684.JPEG', 'n01667778_1686.JPEG', 'n01667778_1687.JPEG']
+    const images_available = [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1]
+    const colors = ['rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)', 'rgba(210,40,95, 1.0)']
+
+    const show_image = (img_src, color) => {
+        let container = document.querySelector(".image-hover");
+        container.style.display = "block";
+        container.style.borderColor = color;
+        let img = document.getElementById("img-tooltip");
+        img.src = img_src;
+    }
+
+    const hide_image = () => {
+        let img = document.getElementById("img-tooltip");
+        let container = document.querySelector(".image-hover");
+
+        container.style.display = "none";
+    }
+
+    let build_tooltip = (context) => { 
+        let id = context.dataIndex;
+        let url = "https://storage.googleapis.com/serrelab/loupe/clusters/" + images_ids[id] + ".jpg";
+
+        if (images_available[id] == 1) {
+            show_image(url, colors[id]);
+        }
+
+        return id;
+    }
+    // strategic graph
+    const ctx3 = document.getElementById('myChart3').getContext('2d');
+    // show images on hover
+    const myChart3 = new Chart(ctx3, {
+        type: 'bubble',
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: build_tooltip
+                    }
+                },
+            },
+            scales: {
+                x: {
+                    display: false,
+                },
+                y: {
+                    display: false,
+                }
+            },
+        },
+        data: {
+            datasets: [{
+                data: [
+                {x: -12.937564849853516, y: 7.3631463050842285, r: 5.0 },{x: 10.9819917678833, y: 15.204313278198242, r: 5.0 },{x: 0.9689531326293945, y: 32.58823013305664, r: 5.0 },{x: -2.3827695846557617, y: 29.859575271606445, r: 5.0 },{x: -7.305239200592041, y: -11.865867614746094, r: 5.0 },{x: -6.655647277832031, y: -13.014275550842285, r: 5.0 },{x: 13.8322172164917, y: -10.098913192749023, r: 5.0 },{x: 1.2886167764663696, y: -12.186307907104492, r: 5.0 },{x: -13.168689727783203, y: -0.46924734115600586, r: 5.0 },{x: 26.780927658081055, y: -12.637028694152832, r: 5.0 },{x: 17.209922790527344, y: -6.486571311950684, r: 5.0 },{x: 16.076690673828125, y: 16.902482986450195, r: 5.0 },{x: 3.2267253398895264, y: -0.5547584891319275, r: 5.0 },{x: 25.089046478271484, y: -11.635958671569824, r: 5.0 },{x: -15.356070518493652, y: -2.9724724292755127, r: 5.0 },{x: -3.3115394115448, y: 30.66024398803711, r: 5.0 },{x: 4.429542064666748, y: -23.195293426513672, r: 5.0 },{x: -11.37615966796875, y: 5.346071243286133, r: 5.0 },{x: -1.377759575843811, y: -27.261396408081055, r: 5.0 },{x: 17.27614402770996, y: 19.395090103149414, r: 5.0 },{x: 1.082980751991272, y: 24.855741500854492, r: 5.0 },{x: 4.707648754119873, y: -26.851049423217773, r: 5.0 },{x: 2.9836809635162354, y: -21.70888900756836, r: 5.0 },{x: 12.674999237060547, y: 13.60864543914795, r: 5.0 },{x: -11.045610427856445, y: 2.6648776531219482, r: 5.0 },{x: 1.2336387634277344, y: -4.569945812225342, r: 5.0 },{x: 19.649946212768555, y: 16.332012176513672, r: 5.0 },{x: 2.5648796558380127, y: -19.573392868041992, r: 5.0 },{x: -5.657353401184082, y: -13.793785095214844, r: 5.0 },{x: 8.214025497436523, y: -24.7198486328125, r: 5.0 },{x: -14.393841743469238, y: 0.5118209719657898, r: 5.0 },{x: 21.425857543945312, y: -13.073807716369629, r: 5.0 },{x: -11.12060260772705, y: -8.921957015991211, r: 5.0 },{x: 0.4652552008628845, y: -19.3920955657959, r: 5.0 },{x: -3.3244967460632324, y: 21.26007080078125, r: 5.0 },{x: 1.4206197261810303, y: -22.856046676635742, r: 5.0 },{x: 3.297647476196289, y: 7.886085510253906, r: 5.0 },{x: -10.499711036682129, y: 5.072781085968018, r: 5.0 },{x: 0.3846282958984375, y: 8.457868576049805, r: 5.0 },{x: -9.909903526306152, y: -6.775379657745361, r: 5.0 },{x: -4.990494251251221, y: 3.221998691558838, r: 5.0 },{x: -2.441068172454834, y: -3.1967883110046387, r: 5.0 },{x: -5.827225208282471, y: -0.6583920121192932, r: 5.0 },{x: 24.69884490966797, y: -6.690367221832275, r: 5.0 },{x: -3.0506927967071533, y: 12.424213409423828, r: 5.0 },{x: 2.2744088172912598, y: 9.33000659942627, r: 5.0 },{x: -1.2252659797668457, y: 24.4584903717041, r: 5.0 },{x: -3.138943910598755, y: 32.25230407714844, r: 5.0 },{x: -16.205982208251953, y: 3.993410587310791, r: 5.0 },{x: -2.640611171722412, y: -26.12281036376953, r: 5.0 },{x: 0.4240226745605469, y: 10.943723678588867, r: 5.0 },{x: -1.0198674201965332, y: -17.95890998840332, r: 5.0 },{x: -18.855680465698242, y: -14.7151460647583, r: 5.0 },{x: -2.5689632892608643, y: -5.138725280761719, r: 5.0 },{x: -14.038275718688965, y: -0.9694042205810547, r: 5.0 },{x: 11.3429594039917, y: 17.44415855407715, r: 5.0 },{x: -14.58383560180664, y: -20.54203224182129, r: 5.0 },{x: 18.340986251831055, y: 16.369524002075195, r: 5.0 },{x: -3.9959230422973633, y: 8.665145874023438, r: 5.0 },{x: 2.5690102577209473, y: -1.5010037422180176, r: 5.0 },{x: 25.22420310974121, y: -9.153680801391602, r: 5.0 },{x: -3.2388293743133545, y: 10.836950302124023, r: 5.0 },{x: -11.885171890258789, y: 16.110265731811523, r: 5.0 },{x: -15.907597541809082, y: 6.5665178298950195, r: 5.0 },{x: 4.038182258605957, y: 31.17182159423828, r: 5.0 },{x: 6.6842827796936035, y: 17.395769119262695, r: 5.0 },{x: -1.8813042640686035, y: 33.35411834716797, r: 5.0 },{x: 19.753734588623047, y: -6.035491466522217, r: 5.0 },{x: -16.12923812866211, y: 10.838114738464355, r: 5.0 },{x: -7.277170658111572, y: -10.611682891845703, r: 5.0 },{x: 5.392323017120361, y: -22.503755569458008, r: 5.0 },{x: 17.24338722229004, y: -3.6174581050872803, r: 5.0 },{x: -11.436827659606934, y: 13.538154602050781, r: 5.0 },{x: -12.177346229553223, y: 15.164865493774414, r: 5.0 },{x: 15.391977310180664, y: 13.829524993896484, r: 5.0 },{x: -8.073728561401367, y: -4.660757064819336, r: 5.0 },{x: 10.781529426574707, y: 19.476125717163086, r: 5.0 },{x: -0.7964427471160889, y: 26.443012237548828, r: 5.0 },{x: -9.848129272460938, y: 2.0404551029205322, r: 5.0 },{x: -6.112058639526367, y: 26.77651596069336, r: 5.0 },{x: -17.577844619750977, y: -16.314680099487305, r: 5.0 },{x: 9.323275566101074, y: 26.61338996887207, r: 5.0 },{x: 2.5601375102996826, y: 34.06706237792969, r: 5.0 },{x: -2.2959866523742676, y: 27.628108978271484, r: 5.0 },{x: -12.89925479888916, y: -13.978219032287598, r: 5.0 },{x: -1.5761361122131348, y: -4.307354927062988, r: 5.0 },{x: 12.494551658630371, y: 16.03500747680664, r: 5.0 },{x: 6.695777416229248, y: 24.998807907104492, r: 5.0 },{x: -9.552672386169434, y: -11.275819778442383, r: 5.0 },{x: -14.376742362976074, y: 2.6528615951538086, r: 5.0 },{x: 11.25436019897461, y: 24.325788497924805, r: 5.0 },{x: 26.224393844604492, y: -11.522154808044434, r: 5.0 },{x: 0.35287055373191833, y: 33.873634338378906, r: 5.0 },{x: -6.191873073577881, y: -1.8395922183990479, r: 5.0 },{x: 8.152726173400879, y: 21.387935638427734, r: 5.0 },{x: 4.721883773803711, y: 18.280710220336914, r: 5.0 },{x: 2.392756223678589, y: 3.2570929527282715, r: 5.0 },{x: -17.50543975830078, y: 6.598232746124268, r: 5.0 },{x: 25.65484619140625, y: -7.2308478355407715, r: 5.0 },{x: -10.689786911010742, y: -13.491880416870117, r: 5.0 },{x: -11.193042755126953, y: -10.6165771484375, r: 5.0 },{x: -3.9225783348083496, y: 25.27174186706543, r: 5.0 },{x: 1.331940770149231, y: 11.876684188842773, r: 5.0 },{x: -0.08686571568250656, y: 32.746177673339844, r: 5.0 },{x: 6.840554714202881, y: 18.721893310546875, r: 5.0 },{x: 3.69628643989563, y: 28.026567459106445, r: 5.0 },{x: 5.808567047119141, y: 17.879581451416016, r: 5.0 },{x: -5.7994465827941895, y: 12.323575019836426, r: 5.0 },{x: 15.274506568908691, y: -8.295304298400879, r: 5.0 },{x: 17.669248580932617, y: 18.321760177612305, r: 5.0 },{x: 21.865398406982422, y: -3.7390573024749756, r: 5.0 },{x: -15.511526107788086, y: 1.9091144800186157, r: 5.0 },{x: -16.66205406188965, y: -16.29712677001953, r: 5.0 },{x: -11.232165336608887, y: 17.298009872436523, r: 5.0 },{x: -10.96816635131836, y: 11.522629737854004, r: 5.0 },{x: 7.290894985198975, y: -22.033306121826172, r: 5.0 },{x: 20.800203323364258, y: -5.615658283233643, r: 5.0 },{x: 2.101217031478882, y: -18.65460777282715, r: 5.0 },{x: 3.698140859603882, y: 33.53500747680664, r: 5.0 },{x: 4.531436920166016, y: 24.23006248474121, r: 5.0 },{x: 0.03919817879796028, y: 31.10886573791504, r: 5.0 },{x: 4.054543495178223, y: 17.40932846069336, r: 5.0 },{x: -1.863240122795105, y: 10.602681159973145, r: 5.0 },{x: -7.761290550231934, y: 7.402460098266602, r: 5.0 },{x: 16.521631240844727, y: 18.307903289794922, r: 5.0 },{x: 7.957886695861816, y: -23.24468421936035, r: 5.0 },{x: -3.63818359375, y: 19.213533401489258, r: 5.0 },{x: -8.516242027282715, y: -6.116091728210449, r: 5.0 },{x: 0.8883964419364929, y: 3.2678534984588623, r: 5.0 },{x: 11.7219820022583, y: 23.192644119262695, r: 5.0 },{x: 8.335793495178223, y: -2.782282590866089, r: 5.0 },{x: 4.515810489654541, y: 26.365896224975586, r: 5.0 },{x: 8.457149505615234, y: -21.831233978271484, r: 5.0 },{x: 8.86015510559082, y: 22.217161178588867, r: 5.0 },{x: -3.8719403743743896, y: 32.99846649169922, r: 5.0 },{x: 3.515509843826294, y: 11.75398063659668, r: 5.0 },{x: 5.7996392250061035, y: -25.69542694091797, r: 5.0 },{x: 18.0889949798584, y: -7.188724517822266, r: 5.0 },{x: -8.491128921508789, y: 12.873331069946289, r: 5.0 },{x: 4.085106372833252, y: 10.962169647216797, r: 5.0 },{x: -12.458902359008789, y: 4.726999282836914, r: 5.0 },{x: -2.5973403453826904, y: 8.94599723815918, r: 5.0 },{x: -1.0516942739486694, y: 22.939350128173828, r: 5.0 },{x: 19.962291717529297, y: -2.9343128204345703, r: 5.0 },{x: -9.161027908325195, y: 8.265100479125977, r: 5.0 },{x: 13.710199356079102, y: 16.745943069458008, r: 5.0 },{x: 19.28274917602539, y: 15.259132385253906, r: 5.0 },{x: 2.6782419681549072, y: -11.633894920349121, r: 5.0 },{x: -2.7773892879486084, y: 17.60877799987793, r: 5.0 },{x: 26.814359664916992, y: -10.732828140258789, r: 5.0 },{x: 7.70995569229126, y: 27.230690002441406, r: 5.0 },{x: -6.4264960289001465, y: -24.99431037902832, r: 5.0 },{x: 3.5594894886016846, y: 34.612632751464844, r: 5.0 },{x: 22.292388916015625, y: -6.262284278869629, r: 5.0 },{x: 4.283037185668945, y: -24.291316986083984, r: 5.0 },{x: -0.13593128323554993, y: -20.337568283081055, r: 5.0 },{x: -18.915353775024414, y: -18.551773071289062, r: 5.0 },{x: -11.662744522094727, y: 8.598247528076172, r: 5.0 },{x: 24.62105369567871, y: -10.20301628112793, r: 5.0 },{x: 0.092228464782238, y: -8.998777389526367, r: 5.0 },{x: -16.168964385986328, y: -1.2576558589935303, r: 5.0 },{x: 19.79269790649414, y: -4.0541253089904785, r: 5.0 },{x: -9.032804489135742, y: 6.562089920043945, r: 5.0 },{x: 15.500578880310059, y: 18.742359161376953, r: 5.0 },{x: -2.728851556777954, y: -17.749208450317383, r: 5.0 },{x: 2.3004562854766846, y: -17.56235122680664, r: 5.0 },{x: 16.789508819580078, y: -5.183315277099609, r: 5.0 },{x: -2.728527545928955, y: 7.657773494720459, r: 5.0 },{x: 2.611562728881836, y: 24.984525680541992, r: 5.0 },{x: -4.1945037841796875, y: -12.71079158782959, r: 5.0 },{x: -1.2261290550231934, y: 30.311840057373047, r: 5.0 },{x: 13.301275253295898, y: 21.23714256286621, r: 5.0 },{x: -3.4717400074005127, y: -25.520526885986328, r: 5.0 },{x: -5.115020751953125, y: 13.122381210327148, r: 5.0 },{x: -16.775346755981445, y: 5.477936744689941, r: 5.0 },{x: 6.925276756286621, y: 21.658599853515625, r: 5.0 },{x: 23.931917190551758, y: -12.807259559631348, r: 5.0 },{x: -1.7380952835083008, y: 32.310081481933594, r: 5.0 },{x: 6.573217391967773, y: -24.193254470825195, r: 5.0 },{x: 5.41539192199707, y: 21.855070114135742, r: 5.0 },{x: -15.654897689819336, y: -18.7944393157959, r: 5.0 },{x: 5.215397834777832, y: 29.623010635375977, r: 5.0 },{x: 6.144163608551025, y: -2.7743191719055176, r: 5.0 },{x: -11.499136924743652, y: -7.036772727966309, r: 5.0 },{x: 14.0357027053833, y: 13.972904205322266, r: 5.0 },{x: -4.552139759063721, y: 23.214725494384766, r: 5.0 },{x: 0.6536669135093689, y: -14.76828384399414, r: 5.0 },{x: 7.7765607833862305, y: 25.973251342773438, r: 5.0 },{x: -5.123444080352783, y: 27.600366592407227, r: 5.0 },{x: 1.1397473812103271, y: 5.9242777824401855, r: 5.0 },{x: -3.4202420711517334, y: -18.953075408935547, r: 5.0 },{x: -9.084949493408203, y: -14.815827369689941, r: 5.0 },{x: -3.525597095489502, y: 2.3989975452423096, r: 5.0 },{x: -12.6804780960083, y: 12.07917308807373, r: 5.0 },{x: 15.79230785369873, y: 14.852023124694824, r: 5.0 },{x: 4.71262788772583, y: -1.791297435760498, r: 5.0 },{x: 0.960510790348053, y: -10.059036254882812, r: 5.0 },{x: 4.271413803100586, y: -19.014114379882812, r: 5.0 },{x: -2.223238229751587, y: -27.58988380432129, r: 5.0 },{x: 1.0331796407699585, y: 15.890027046203613, r: 5.0 },{x: -10.436664581298828, y: 16.295364379882812, r: 5.0 },{x: 18.09507942199707, y: -4.775137901306152, r: 5.0 },{x: -5.678228855133057, y: -24.259105682373047, r: 5.0 },{x: -7.8036956787109375, y: 8.973563194274902, r: 5.0 },{x: -12.340852737426758, y: -12.957035064697266, r: 5.0 },{x: 23.358684539794922, y: -10.236652374267578, r: 5.0 },{x: -1.5817461013793945, y: -11.866191864013672, r: 5.0 },{x: 0.49159929156303406, y: -13.430288314819336, r: 5.0 },{x: -5.477005958557129, y: 20.440309524536133, r: 5.0 },{x: 21.284093856811523, y: -8.965893745422363, r: 5.0 },{x: 9.257006645202637, y: 25.224346160888672, r: 5.0 },{x: 23.3585147857666, y: -7.611419200897217, r: 5.0 },{x: 4.041065216064453, y: -20.94158363342285, r: 5.0 },{x: -10.492259979248047, y: 9.956070899963379, r: 5.0 },{x: -1.3693256378173828, y: -26.081748962402344, r: 5.0 },{x: 0.28218039870262146, y: 3.5248115062713623, r: 5.0 },{x: -13.651176452636719, y: -2.092843532562256, r: 5.0 },{x: 16.119384765625, y: -7.708198070526123, r: 5.0 },{x: -1.1614075899124146, y: 27.90432357788086, r: 5.0 },{x: 14.517691612243652, y: 11.843486785888672, r: 5.0 },{x: -10.786396026611328, y: -4.434191703796387, r: 5.0 },{x: -15.174907684326172, y: -0.9231683611869812, r: 5.0 },{x: -2.006774663925171, y: -21.566144943237305, r: 5.0 },{x: 4.080410003662109, y: -12.835137367248535, r: 5.0 },{x: -0.8440755009651184, y: 9.409964561462402, r: 5.0 },{x: -14.473308563232422, y: 7.579819202423096, r: 5.0 },{x: -0.15436887741088867, y: -11.708720207214355, r: 5.0 },{x: 25.421369552612305, y: -13.37402057647705, r: 5.0 },{x: 8.7659273147583, y: 29.19919776916504, r: 5.0 },{x: -0.9597690105438232, y: -8.898554801940918, r: 5.0 },{x: -8.11586856842041, y: -3.045898199081421, r: 5.0 },{x: -6.324435234069824, y: 6.773013591766357, r: 5.0 },{x: -11.684720993041992, y: 9.980018615722656, r: 5.0 },{x: 10.022710800170898, y: 23.86461639404297, r: 5.0 },{x: 5.52571439743042, y: 27.91140365600586, r: 5.0 },{x: -17.391857147216797, y: -17.890201568603516, r: 5.0 },{x: 11.529071807861328, y: -28.562623977661133, r: 5.0 },{x: -15.125503540039062, y: 4.079955577850342, r: 5.0 },{x: -4.52377462387085, y: 26.71345329284668, r: 5.0 },{x: 22.925132751464844, y: -3.945080280303955, r: 5.0 },{x: -4.823500633239746, y: 21.657468795776367, r: 5.0 },{x: 9.023961067199707, y: -23.155214309692383, r: 5.0 },{x: 2.1650402545928955, y: -13.871623992919922, r: 5.0 },{x: -13.334127426147461, y: -5.280832290649414, r: 5.0 },{x: -9.546012878417969, y: 18.269994735717773, r: 5.0 },{x: -2.463977098464966, y: 19.42327308654785, r: 5.0 },{x: -10.889254570007324, y: 14.812520980834961, r: 5.0 },{x: 18.21095085144043, y: -3.4840645790100098, r: 5.0 },{x: 21.879802703857422, y: -7.777288913726807, r: 5.0 },{x: 13.544157028198242, y: 22.21512222290039, r: 5.0 },{x: 2.6076700687408447, y: -12.839611053466797, r: 5.0 },{x: -15.778922080993652, y: -17.60792350769043, r: 5.0 },{x: -2.0327253341674805, y: 31.322877883911133, r: 5.0 },{x: -5.565055847167969, y: 25.827768325805664, r: 5.0 },{x: -15.618685722351074, y: -20.35222625732422, r: 5.0 },{x: 9.609600067138672, y: 21.129758834838867, r: 5.0 },{x: -9.618770599365234, y: 3.4385228157043457, r: 5.0 },{x: 0.9465223550796509, y: 30.12517547607422, r: 5.0 },{x: -3.8184750080108643, y: 28.900020599365234, r: 5.0 },{x: 15.985577583312988, y: 19.823589324951172, r: 5.0 },{x: -1.994221806526184, y: 20.79192352294922, r: 5.0 },{x: -9.48339557647705, y: -16.505043029785156, r: 5.0 },{x: -4.227099895477295, y: 4.269298553466797, r: 5.0 },{x: -3.8582022190093994, y: -16.819347381591797, r: 5.0 },{x: 3.8458411693573, y: 31.907958984375, r: 5.0 },{x: -4.101005554199219, y: 1.0686216354370117, r: 5.0 },{x: 23.912952423095703, y: -9.162641525268555, r: 5.0 },{x: -8.044998168945312, y: -9.450873374938965, r: 5.0 },{x: -9.3967924118042, y: 10.192296028137207, r: 5.0 },{x: -8.884727478027344, y: 16.7955265045166, r: 5.0 },{x: -16.882410049438477, y: -17.104755401611328, r: 5.0 },{x: -3.4843928813934326, y: 14.553382873535156, r: 5.0 },{x: -4.468930721282959, y: -24.73488426208496, r: 5.0 },{x: -9.844945907592773, y: -15.31113338470459, r: 5.0 },{x: 14.719222068786621, y: -7.230533599853516, r: 5.0 },{x: -10.229741096496582, y: -9.808757781982422, r: 5.0 },{x: 8.662568092346191, y: 24.351041793823242, r: 5.0 },{x: 16.240758895874023, y: -9.361241340637207, r: 5.0 },{x: -4.231366157531738, y: -3.9524755477905273, r: 5.0 },{x: 7.354941368103027, y: -26.234922409057617, r: 5.0 },{x: -10.231752395629883, y: -5.116908550262451, r: 5.0 },{x: 9.487539291381836, y: -28.18042755126953, r: 5.0 },{x: 7.894402980804443, y: 29.296674728393555, r: 5.0 },{x: 0.28268054127693176, y: 24.100828170776367, r: 5.0 },{x: 0.5013131499290466, y: 6.904123306274414, r: 5.0 },{x: -7.141296863555908, y: 10.962072372436523, r: 5.0 },{x: 23.56529998779297, y: -5.415683746337891, r: 5.0 },{x: 14.075413703918457, y: 19.21709442138672, r: 5.0 },{x: -7.379932880401611, y: -14.683780670166016, r: 5.0 },{x: 0.28721851110458374, y: -5.1336989402771, r: 5.0 },{x: 3.6979711055755615, y: -17.267988204956055, r: 5.0 },{x: 19.067150115966797, y: -2.5206668376922607, r: 5.0 },{x: 4.52936315536499, y: 8.546685218811035, r: 5.0 },{x: 2.676947832107544, y: -3.675330877304077, r: 5.0 },{x: -9.932477951049805, y: 14.459447860717773, r: 5.0 }
+                ],
+                backgroundColor: [
+                    "rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)","rgba(210,40,95, 1.0)"
+                ],
+                borderWidth: 0
+            }]
+        },
+    });
+</script>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+      
+        <script src="../../js/custom.js"></script>
+      
+    
+  </body>
+</html>
