@@ -44,6 +44,7 @@
     transition: all 0.2s ease-in-out;
     border: solid 2px white;
     font-size: 14px;
+    color: var(--dark) !important;
 }
 
 .image-hover {
