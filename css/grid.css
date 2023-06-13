@@ -44,12 +44,13 @@
 }
 
 .feature-viz-intro {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
 }
 
 .feature-viz-intro .gallery-container-img:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
+    box-shadow: 0 0 25px currentcolor;
 }
 
 .feature-viz-intro .gallery-container-img:hover {
@@ -58,6 +59,7 @@
 
 .feature-viz-intro .gallery-container-img {
     width: 49%;
+    max-width: 250px;
     border: solid 3px transparent;
     border-radius: 5%;
     margin: 3px;

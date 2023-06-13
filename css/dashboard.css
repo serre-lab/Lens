@@ -49,8 +49,8 @@
 
 .image-hover {
     position: absolute;
-    top: 0px;
-    left: -75px;
+    top: 10px;
+    left: 10px;
     width: 100px;
     height: 100px;
     background-color: white;
@@ -65,4 +65,10 @@
 .image-hover img {
     width: 100px;
     height: 100px;
+}
+
+.strategic-cluster {
+    border: solid 2px var(--primary);
+    border-radius: 5px;
+    padding-left: 100px;
 }

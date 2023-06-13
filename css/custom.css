@@ -251,3 +251,22 @@ span {
 .red-deel {
     color: rgb(235, 85, 62);
 }
+
+@media (max-width: 1600px) {
+    #indicators {
+        display: None;
+    }
+
+    .feature-viz-intro .gallery-container-img {
+        width: 100% !important;
+        max-width: 270px;
+    }
+
+    .feature-viz-intro .gallery-container-img:hover {
+        transform: scale(1.1) !important;
+    }
+}
+
+.md-grid {
+    max-width: 71rem;
+}
