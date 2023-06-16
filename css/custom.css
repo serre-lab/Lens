@@ -267,6 +267,19 @@ span {
     }
 }
 
+@media (max-width: 768px) {
+
+    /* Hide only the last gif intro */
+    .gif-intro:last-child {
+        display: none;
+    }
+
+    /* and give the other ones a bit more space */
+    .gif-intro {
+        width: 48%;
+    }
+}
+
 .md-grid {
     max-width: 71rem;
 }
