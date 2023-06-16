@@ -1,11 +1,16 @@
-# LENS Project
+<h1 align="center"> <img src="https://serre-lab.github.io/Lens/assets/lens.png" width=42px> LENS Project </h1>
 
-_Thomas Fel, Thomas Serre_
+<p align="center">
+  Thomas Fel, Thomas Serre <br> <sub>{thomas_fel}@brown.edu </sub>
+</p>
+
 
 <br>
 
+<p align="center">
 Carney Institute for Brain Science, <a href="https://serre-lab.clps.brown.edu/">Brown University (Providence, USA)</a>, <br> 
 <a href="https://deel.ai/"> DEEL</a> Team - Artificial and Natural Intelligence Toulouse Institute </span>
+</p>
 
 <br>
 
@@ -14,6 +19,9 @@ Carney Institute for Brain Science, <a href="https://serre-lab.clps.brown.edu/">
   <b><a href="https://serre-lab.github.io/Lens/classes/espresso/"> Getting Started » </a></b>
 </p>
 
+<div class="image-intro">
+    <img src="https://serre-lab.github.io/Lens/assets/lens_intro.jpg" width=100%>
+</div>
 
 <p align="center">
   This project is the result of several articles, the most notable ones being <br>
@@ -24,9 +32,6 @@ Carney Institute for Brain Science, <a href="https://serre-lab.clps.brown.edu/">
   <br>
 </p>
 
-<div class="image-intro">
-    <img src="https://serre-lab.github.io/Lens/assets/lens_intro.jpg" width=100%>
-</div>
 
 This project aims to characterize the strategies, identify key features used by state-of-the-art models trained on ImageNet, and detect biases using the latest explainability methods: Concept-based explainability, Attribution methods, and Feature Visualization. We show that these approaches, far from being antagonistic, can be complementary in helping better understand  models.
 
@@ -34,7 +39,7 @@ The illustrated model in this project is a ResNet50, where each class in ImageNe
 
 A normalized importance score is calculated for each concept, indicating the concept's significance for the class. For example, an importance level of 0.30 means that the concept contributes 30% of the sum of logits for all points classified as that class.
 
-The <a href="https://serre-lab.github.io/Lens/method/">"LENS Method"</a> page provides an introduction explaining how to interpret the results.
+The <a href="https://serre-lab.github.io/Lens/method/"><img src="https://serre-lab.github.io/Lens/assets/lens.png" width=32px> "LENS Method"</a> page provides an introduction explaining how to interpret the results.
 
 
 ## 🤝 Contributors
@@ -64,7 +69,7 @@ Several articles have greatly inspired the development of the attribution method
 
 ## 🗞️ Citation
 
-If you are using LENS as part of your workflow in a scientific publication, please consider citing one of the articles we build on:
+If you are using <img src="https://serre-lab.github.io/Lens/assets/lens.png" width=32px> LENS as part of your workflow in a scientific publication, please consider citing one of the articles we build on:
 
 ```latex
 @inproceedings{fel2023craft,
