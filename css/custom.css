@@ -252,7 +252,7 @@ span {
     color: rgb(235, 85, 62);
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
     #indicators {
         display: None;
     }
@@ -269,4 +269,18 @@ span {
 
 .md-grid {
     max-width: 71rem;
+}
+
+.flex-gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gif-intro {
+    width: 30%;
+    margin: auto;
+    text-align: center;
 }

@@ -27,15 +27,14 @@ carts.map(car => {
         hidden_images = [...car.querySelectorAll(".hidden-images img")]
         hidden_images.map((img, i) => {
             theta = i * 2 * Math.PI / hidden_images.length
-            if (img.style.transform == `translate(0px, 0px)` || img.style.transform == ``) {
+            if (img.style.transform == `translate(0px, 0px)` || img.style.transform == `` || img.style.transform == `translate(0px)`) {
                 img.style.transform = `translate(${Math.cos(theta) * 140}px, ${Math.sin(theta) * 140}px)`
-                console.log(`translate(${Math.cos(theta) * 140}px, ${Math.sin(theta) * 140}px)`)
                 img.style.opacity = 1
             } else {
                 img.style.transform = `translate(0px, 0px)`
                 img.style.opacity = 0
             }
-            console.log(img, theta)
+            //console.log(img, theta)
             //img.style.transform = `translate(${'{'}Math.cos(theta) * translate_size{'}'}px, ${'{'}Math.sin(theta) * translate_size{'}'}px)`
         })
         // if possible, show the most similar classes

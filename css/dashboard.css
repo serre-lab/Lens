@@ -1,14 +1,16 @@
 :root {
-    --boussole-width: 310px;
+    --boussole-width: 275px;
     --boussole-height: 150px;
+    --top-anchor: 250px;
+    --right-anchor: 0.1%;
 }
 
 .boussole-importance {
     position: fixed;
-    top: 100px;
+    top: var(--top-anchor);
     height: var(--boussole-height);
     width: var(--boussole-width);
-    right: 1%;
+    right: var(--right-anchor);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 3%;
@@ -20,8 +22,8 @@
     position: fixed;
     height: var(--boussole-height);
     width: var(--boussole-width);
-    top: calc(100px + var(--boussole-height) + 10px);
-    right: 1%;
+    top: calc(var(--top-anchor) + var(--boussole-height) + 10px);
+    right: var(--right-anchor);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 3%;
@@ -33,8 +35,8 @@
     position: fixed;
     height: var(--boussole-height);
     width: var(--boussole-width);
-    top: calc(100px + 2 * var(--boussole-height) + 20px);
-    right: 1%;
+    top: calc(var(--top-anchor) + 2 * var(--boussole-height) + 20px);
+    right: var(--right-anchor);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 3%;
@@ -45,6 +47,7 @@
     border: solid 2px white;
     font-size: 14px;
     color: var(--dark) !important;
+    z-index: 5;
 }
 
 .image-hover {
