@@ -276,7 +276,7 @@ span {
 
     /* and give the other ones a bit more space */
     .gif-intro {
-        width: 48%;
+        width: 50% !important;
     }
 }
 
