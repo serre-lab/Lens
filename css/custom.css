@@ -23,7 +23,7 @@
 }
 
 :root {
-    --primary: rgb(255, 159, 104);
+    --primary: rgb(63, 81, 181);
     --synthax-blue: var(--primary);
     --md-accent-fg-color: var(--synthax-blue);
 }
@@ -31,7 +31,7 @@
 [data-md-color-scheme="default"] {
     /* dark theme */
     /*--primary: #ecb22e;--synthax-blue: #ecb22e;*/
-    --primary: rgb(103, 58, 183);
+    --primary: rgb(63, 81, 181);
     --synthax-blue: var(--primary);
     --dark: #313131;
     --synthax-red: #03DAC6;
