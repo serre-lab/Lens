@@ -77,7 +77,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -137,7 +137,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -147,7 +147,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="dark" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="dark" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -20411,49 +20411,148 @@
   
 
 
-<div style="text-align:center">
-    <h1 style="text-align: center; font-weight: bold; color: inherit; margin-bottom: 0.2em"> <span style="letter-spacing: 3px;">LENS</span> Project </h1>
-    <span class="author" style="font-weight: bold">
-    Thomas Fel,
-    Thomas Serre  <br>
-    <span class="mono"> {thomas_fel}@brown.edu </span> <br> <br>
+<div style="position:absolute; left:-2vw; top:-5vh; opacity:0.1">
+    <img src="assets/lens.png" style="width:30vw;">
+</div>
 
-    <span class="affiliations"> Carney Institute for Brain Science, <a href="https://serre-lab.clps.brown.edu/" class="brown-txt">Brown University (Providence, USA)</a>, <br> <a href="https://deel.ai/"> <span class="blue-deel">DE</span><span class="red-deel">E</span><span class="blue-deel">L</span></a> Team - Artificial and Natural Intelligence Toulouse Institute </span>
+<div style="display: flex;" class="container-title">
 
-    <br>
+<div class="page-title" style="text-align:left; flex: 0 0 60%">
+  <h1 style="text-align: left; font-weight: bold; color: inherit; margin-bottom: 0.2em; font-size:4em"> <span style="letter-spacing: 3px;">LENS</span> Project </h1>
+  <span class="author" style="font-weight: bold; font-size:1em">
+  Thomas Fel,
+  Thomas Serre  <br>
+  <span class="mono"> {thomas_fel}@brown.edu </span> <br>
+  <span class="affiliations"> <a href="https://serre-lab.clps.brown.edu/" class="brown-txt">Brown University</a>, <a href="https://deel.ai/"> <span class="blue-deel">DE</span><span class="red-deel">E</span><span class="blue-deel">L</span></a> Team </span></span>
+
+
+  <br>
+  <br>
+
+  <div style="font-size:1em;">
+  <b><a href="classes/espresso/" class="button-style"> 👋 Start exploring now » </a></b>
+  </div>
 
 </div>
 
-<p align="center">
-  <b><a href="classes/espresso/"> 👋 Start exploring » </a></b>
-</p>
 
 <div class="flex-gif">
+  <!--
   <div class="gif-intro">
-    <video playsinline autoplay muted loop>
-      <source src="assets/1.mp4" type="video/mp4">
+    <video loop="true" autoplay="autoplay" muted>
+      <source src="assets/videos/green_snake.mp4" type="video/mp4">
     </video>
-    <div> <i> Goldfish concepts </i> </div>
+  </div>
+  -->
+  <div class="gif-intro">
+    <video loop="true" autoplay="autoplay" muted>
+      <source src="assets/videos/espresso.mp4" type="video/mp4">
+    </video>
+    <!--<div> <i> Espresso concepts </i> </div> -->
+  </div>
+  <!--
+  <div class="gif-intro">
+    <video playsinline autoplay muted>
+      <source src="assets/videos/tennis.mp4" type="video/mp4">
+    </video>
+  </div>
+  -->
+</div>
+
+</div>
+
+<p align="justify" style="font-weight:500; font-size:1.2em; margin-top:5vh;">
+The purpose of this tool is to provide a <b>quick overview of the main strategies</b> employed by a large vision model for <b>each 1000 classes in ImageNet </b>, along with an <b>associated importance score for these strategies</b>. For instance, when classifying "espresso," the model utilizes features such as <i style="font-weight:bold; color: rgb(66, 133, 244)">black coffee</i>, <i style="font-weight:bold; color: rgb(210, 40, 95)">foam</i>, <i style="font-weight:bold; color: rgb(236, 178, 46)">handle</i> (a bias), and <i style="font-weight:bold; color: black">patterns of latte art</i>. Click on some examples to get started or use the search field at the top to find a specific class.
+</p>
+
+<div class="feature-viz-intro">
+<div class="gallery">
+
+  <div class="gallery-container-img" style="border-color: rgb(66, 133, 244); color: rgb(66, 133, 244); opacity: 1;" id="card-8">
+      <span style="color: rgba(66,133,244, 1.0)"><small>Concept</small> 8 (<small>Importance</small> 39%)</span>
+      <img src="https://storage.googleapis.com/serrelab/loupe/fviz/967_8.png" class="gallery-img">
+      <div class="hidden-images">
+          <img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_0.png" class="surprise-img img1" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_1.png" class="surprise-img img2" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_2.png" class="surprise-img img3" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_3.png" class="surprise-img img4" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_4.png" class="surprise-img img5" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_5.png" class="surprise-img img6" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_6.png" class="surprise-img img7" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_7.png" class="surprise-img img8" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_8.png" class="surprise-img img9" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_8_9.png" class="surprise-img img10" style="transform: translate(0px, 0px); opacity: 0;">
+      </div>
+  </div>
+
+  <div class="gallery-container-img" style="border-color: rgb(210, 40, 95); color: rgb(210, 40, 95); opacity: 1;" id="card-1">
+      <span style="color: rgba(210,40,95, 1.0)"><small>Concept</small> 1 (<small>Importance</small> 24%)</span>
+      <img src="https://storage.googleapis.com/serrelab/loupe/fviz/967_1.png" class="gallery-img">
+      <div class="hidden-images">
+          <img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_0.png" class="surprise-img img1" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_1.png" class="surprise-img img2" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_2.png" class="surprise-img img3" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_3.png" class="surprise-img img4" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_4.png" class="surprise-img img5" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_5.png" class="surprise-img img6" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_6.png" class="surprise-img img7" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_7.png" class="surprise-img img8" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_8.png" class="surprise-img img9" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_1_9.png" class="surprise-img img10" style="transform: translate(0px, 0px); opacity: 0;">
+      </div>
+  </div>
+
+  <div class="gallery-container-img" style="border-color: rgb(236, 178, 46); color: rgb(236, 178, 46); opacity: 1;" id="card-2">
+      <span style="color: rgba(236,178,46, 1.0)"><small>Concept</small> 2 (<small>Importance</small> 17%)</span>
+      <img src="https://storage.googleapis.com/serrelab/loupe/fviz/967_2.png" class="gallery-img">
+      <div class="hidden-images">
+          <img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_0.png" class="surprise-img img1" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_1.png" class="surprise-img img2" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_2.png" class="surprise-img img3" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_3.png" class="surprise-img img4" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_4.png" class="surprise-img img5" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_5.png" class="surprise-img img6" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_6.png" class="surprise-img img7" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_7.png" class="surprise-img img8" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_8.png" class="surprise-img img9" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_2_9.png" class="surprise-img img10" style="transform: translate(0px, 0px); opacity: 0;">
+      </div>
+  </div>
+
+  <div class="gallery-container-img" id="card-9" style="opacity: 1;">
+      <span> <small>Concept</small> 9 (<small>Importance</small> 5%)</span>
+      <img src="https://storage.googleapis.com/serrelab/loupe/fviz/967_9.png" class="gallery-img">
+      <div class="hidden-images">
+          <img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_0.png" class="surprise-img img1" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_1.png" class="surprise-img img2" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_2.png" class="surprise-img img3" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_3.png" class="surprise-img img4" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_4.png" class="surprise-img img5" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_5.png" class="surprise-img img6" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_6.png" class="surprise-img img7" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_7.png" class="surprise-img img8" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_8.png" class="surprise-img img9" style="transform: translate(0px, 0px); opacity: 0;"><img src="https://storage.googleapis.com/serrelab/loupe/crops/967_9_9.png" class="surprise-img img10" style="transform: translate(0px, 0px); opacity: 0;">
+      </div>
+  </div>
+
+</div>
+</div>
+
+<div style="text-align:left; flex: 0 0 95%; margin-top:5vh;">
+  <h1 style="text-align: left; font-weight: bold; color: inherit; margin-bottom: 0.2em; font-size:4em"> How does it work? </h1>
+</div>
+
+<div>
+<p> 
+LENS is straightforward: it's a method that <b> automatically (they are not predefined)</b> retrieves the concepts (or strategies) used by a model for a given class, and assigns an importance score to each of these concepts/strategies. The website allows scrolling through the top 10 most important concepts for each class. Each concept is represented by a feature visualization, meaning an image that maximizes the concept's value or epitomizes it. <b>By clicking on this feature viz </b>, users can view crops of images that activate this concept. Keep in mind, the higher the importance score, the more determinant the concept is for the model.
+</p>
+
+</div>
+
+<div class="flex-gif gallery-gif" style="font-size:0.8em">
+  <div class="gif-intro">
+    <video loop="true" autoplay="autoplay" muted>
+      <source src="assets/videos/green_snake.mp4" type="video/mp4">
+    </video>
+    <p> <a href="classes/green%20mamba/" class="button-style"> 🐍 Green snake  » </a> </p>
   </div>
   <div class="gif-intro">
-    <video playsinline autoplay muted loop>
-      <source src="assets/2.mp4" type="video/mp4">
+    <video loop="true" autoplay="autoplay" muted>
+      <source src="assets/videos/granny.mp4" type="video/mp4">
     </video>
-    <div> <i> Ostrich concepts </i> </div>
+    <p> <a href="classes/Granny%20Smith/" class="button-style"> 🍏 Granny smith » </a> </p>
   </div>
   <div class="gif-intro">
-    <video playsinline autoplay muted loop>
-      <source src="assets/4.mp4" type="video/mp4">
+    <video loop="true" autoplay="autoplay" muted>
+      <source src="assets/videos/chainsaw.mp4" type="video/mp4">
     </video>
-    <div> <i> Loggerhead concepts </i> </div>
+    <p> <a href="classes/chain%20saw/" class="button-style"> 🪚 Chainsaw » </a> </p>
+  </div>
+  <div class="gif-intro">
+    <video loop="true" autoplay="autoplay" muted>
+      <source src="assets/videos/tennis.mp4" type="video/mp4">
+    </video>
+    <p> <a href="classes/tennis%20ball/" class="button-style">  🎾 Tennis ball » </a> </p>
   </div>
 </div>
 
-<p align="center">
+<p><br></p>
+<p>Alternatively, you can begin exploring on your own by clicking the  <a href="#" onclick="go_random_class()" class="button-style" style="font-size: 0.8em">  🎲  Random class » </a>.</p>
+
+<div style="text-align:left; flex: 0 0 95%; margin-top:5vh;">
+  <h1 style="text-align: left; font-weight: bold; color: inherit; margin-bottom: 0.2em; font-size:4em"> About <span style="letter-spacing: 3px;">LENS</span> </h1>
+</div>
+
+<p align="justify">
   This project is the result of several articles, the most notable ones being <br>
-  <a href="https://arxiv.org/abs/2211.10154" style="color: rgb(84, 134, 255)"><strong>CRAFT </strong></a> ·
-  <a href="https://arxiv.org/abs/2306.06805" style="color: rgb(62, 147, 131)"><strong>MACO </strong></a> ·
-  <a href="https://arxiv.org/abs/2306.07304" style="color: rgb(250, 189, 56)"><strong>Holistic</strong></a>
+  <a href="https://arxiv.org/abs/2211.10154" style="color: rgb(84, 134, 255)"><strong>CRAFT</strong></a> <small>(CVPR)</small> ·
+  <a href="https://arxiv.org/abs/2306.06805" style="color: rgb(62, 147, 131)"><strong>MACO</strong></a> <small>(NeurIPS)</small>·
+  <a href="https://arxiv.org/abs/2306.07304" style="color: rgb(250, 189, 56)"><strong>Holistic</strong></a> <small>(NeurIPS)</small>
   <br>
   <br>
 </p>
@@ -20462,10 +20561,16 @@
     <img src="assets/lens_intro.jpg" width=100%>
 </div>
 
-<p>This project aims to characterize the strategies, identify key features used by state-of-the-art models trained on ImageNet, and detect biases using the latest explainability methods: Concept-based explainability, Attribution methods, and Feature Visualization. We show that these approaches, far from being antagonistic, can be complementary in helping better understand  models.</p>
-<p>The illustrated model in this project is a ResNet50, where each class in ImageNet has its dedicated page highlighting the concepts used by the model to classify that particular class.</p>
-<p>A normalized importance score is calculated for each concept, indicating the concept's significance for the class. For example, an importance level of 0.30 means that the concept contributes 30% of the sum of logits for all points classified as that class.
-The <a href="../method/">"LENS Method"</a> page provides an introduction explaining how to interpret the results.</p>
+<p align='justify'>
+The goal of this project is to characterize the strategies, identify key features used by state-of-the-art models trained on ImageNet, and detect biases using the latest explainability methods: Concept-based explainability, Attribution methods, and Feature Visualization. We also want to show that <b>these approaches, far from being antagonistic, can be complementary in helping better understand  models</b>.
+The illustrated model in this project is a ResNet50, where each class in ImageNet has its dedicated page highlighting the concepts used by the model to classify that particular class.
+
+<br>
+
+A normalized importance score is calculated for each concept, indicating the concept's significance for the class. For example, an importance level of 30% means that the concept contributes 30% of the sum of logits for all points classified as that class.
+The <a href="../method/">"LENS Method"</a> page provides an introduction explaining how to interpret the results.
+</p>
+
 <h2 id="contributors">🤝 Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h2>
 <p>This interactive website relies on numerous published studies, with each member considered a contributor to the project.</p>
 <p><a href="https://arxiv.org/abs/2211.10154" style="color: rgb(84, 134, 255)"><strong>CRAFT</strong></a>:
@@ -20510,7 +20615,7 @@ Thomas Fel<sup>⭑</sup>, Victor Boutin<sup>⭑</sup>, Mazda Moayeri, Rémi Cad�
 <span class="nb">}</span>
 </code></pre></div></p>
 <h2 id="license">📝 License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>The package is released under <a href="https://choosealicense.com/licenses/mit"> MIT license</a>.</p>
+<p>The project is released under <a href="https://choosealicense.com/licenses/mit"> MIT license</a>.</p>
 <div class="footnote">
 <hr />
 <ol>

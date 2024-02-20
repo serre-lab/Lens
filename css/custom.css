@@ -59,6 +59,10 @@ html {
     font-size: 115%;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 .md-header {
     background-color: var(--md-footer-bg-color);
 }
@@ -269,9 +273,22 @@ span {
 
 @media (max-width: 768px) {
 
+    .container-title {
+        flex-wrap: wrap;
+    }
+    .container-title .gif-intro {
+        width: 101% !important;
+        margin-top: 25px;
+    }
+
+    .page-title {
+        flex: 0 0 100% !important;
+        text-align: center !important;
+    }
+
     /* Hide only the last gif intro */
     .gif-intro:last-child {
-        display: none;
+        /*display: none;*/
     }
 
     /* and give the other ones a bit more space */
@@ -293,7 +310,30 @@ span {
 }
 
 .gif-intro {
-    width: 30%;
+    width: 105%;
     margin: auto;
     text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3%;
+    padding: 0;
+    border: solid 2px var(--dark);
+    overflow: hidden;
+}
+
+.flex-gif.gallery-gif .gif-intro {
+    width: 45%;
+    border-radius: 1%;
+    margin-top: 20px;
+}
+
+.button-style {
+    font-size: 1em;
+    background: var(--dark);
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white !important;
+    border-radius: 16.5px;
+    font-weight: bold;
 }

@@ -50,10 +50,7 @@
 
 .feature-viz-intro .gallery-container-img:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 25px currentcolor;
-}
-
-.feature-viz-intro .gallery-container-img:hover {
+    box-shadow: 0 0 12px currentColor;
     background-color: var(--md-default-bg-color);
 }
 
@@ -65,6 +62,8 @@
     margin: 3px;
     position: relative;
     cursor: pointer;
+    box-shadow: 0 0 0px color-mix(in srgb, currentColor 0%, transparent);
+    transition: all 0.2s ease-in-out;
 }
 
 .feature-viz-intro .gallery-container-img.four-columns {
@@ -94,6 +93,13 @@ span.important {
 .feature-viz-intro img {
     width: 100%;
     height: auto;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.feature-viz-intro .gallery-container-img:hover img {
+    transform: scale(1.2);
 }
 
 .hidden-images {

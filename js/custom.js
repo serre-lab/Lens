@@ -87,3 +87,12 @@ const hide_image = () => {
 
     container.style.display = "none";
 }
+function go_random_class(){
+    let links = document.querySelectorAll('.md-nav.md-nav--primary .md-nav__item--nested .md-nav__item');
+    let random_index = Math.floor(Math.random() * links.length);
+    let random_link = links[random_index];
+    let anchor = random_link.querySelector('a');
+    let href = anchor.href;
+    window.location.href = href;
+}
+
