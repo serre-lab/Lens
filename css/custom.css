@@ -137,11 +137,12 @@ table {
 .md-typeset__table {
     width: 100%;
 }
-
+/*
 .md-nav--primary .md-nav__title {
     background: none !important;
     box-shadow: none !important;
 }
+*/
 
 .md-typeset table:not([class]) {
     display: table;
@@ -347,6 +348,10 @@ span {
 .flex-gif .button-style {
     margin-top: -40px;
     margin-bottom: 10px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .caroussel {

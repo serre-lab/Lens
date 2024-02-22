@@ -76,12 +76,3 @@ function go_random_class(){
     window.location.href = href;
 }
 
-var js,
-fjs = document.getElementsByTagName("head")[0];
-var isios = (navigator.userAgent.match(/iPad|iPhone|iPod/i)); 
-if(isios) { 
-js = document.createElement("meta");
-js.httpEquiv = "Content-Security-Policy";
-js.content = "script-src 'unsafe-inline'"; 
-fjs.appendChild(js, fjs); }
-

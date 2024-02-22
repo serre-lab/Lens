@@ -110,10 +110,11 @@ span.important {
     top: calc(50% - var(--size) / 2);
     left: calc(50% - var(--size) / 2);
     width: var(--size);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
     opacity: 0;
     z-index: 1000;
     transform: translate(0px, 0px);
+    border-radius: 10px;
 }
 
 summary span {
