@@ -2,6 +2,12 @@
     --primary: rgb(63, 81, 181);
     --synthax-blue: var(--primary);
     --md-accent-fg-color: var(--synthax-blue);
+    --shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 [data-md-color-scheme="default"] {
@@ -37,6 +43,7 @@ html {
 
 p {
     font-size: 1.2em;
+    text-align: justify;
 }
 
 .md-header {
@@ -131,6 +138,11 @@ table {
     width: 100%;
 }
 
+.md-nav--primary .md-nav__title {
+    background: none !important;
+    box-shadow: none !important;
+}
+
 .md-typeset table:not([class]) {
     display: table;
 }
@@ -212,7 +224,7 @@ span {
 }
 
 .box-shadow {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: var(--shadow);
 }
 
 .md-typeset .md-button {
@@ -245,6 +257,7 @@ span {
     .feature-viz-intro .gallery-container-img:hover {
         transform: scale(1.1) !important;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -269,7 +282,17 @@ span {
 
     /* and give the other ones a bit more space */
     .gif-intro {
-        width: 50% !important;
+        width: 46% !important;
+    }
+}
+
+@media screen and (max-width: 76.234375em) {
+    .md-nav__source {
+        background-color: var(--dark) !important;
+    }
+    .md-nav--primary .md-nav__title {
+        background: var(--dark) !important;
+        color: white !important;
     }
 }
 
@@ -289,7 +312,7 @@ span {
     width: 105%;
     margin: auto;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: var(--shadow);
     border-radius: 3%;
     padding: 0;
     border: solid 2px var(--dark);
@@ -297,19 +320,95 @@ span {
 }
 
 .flex-gif.gallery-gif .gif-intro {
-    width: 45%;
+    width: 46%;
     border-radius: 1%;
     margin-top: 20px;
 }
 
-.button-style {
+.button-style a {
     font-size: 1em;
     background: var(--dark);
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 11px;
+    padding-right: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
     color: white !important;
     border-radius: 16.5px;
     font-weight: bold;
+    transition: all 0.2 ease-in-out;
+    margin-right: 0px;
+}
+
+.button-style {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-gif .button-style {
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+.caroussel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 120px));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.caroussel .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    animation: floating 10s infinite alternate;
+    transition: all 0.3s ease-in-out;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.caroussel .card img {
+    margin: auto;
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.caroussel .card:nth-of-type(2n) {
+    animation-delay: 0.6s;
+    animation-duration: 10s;
+    animation-direction: reverse;
+}
+
+.caroussel .card:nth-of-type(3n) {
+    animation-delay: 1.3s;
+    animation-duration: 8s;
+}
+
+.caroussel .card:nth-of-type(5n) {
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.caroussel .card:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    33% {
+        transform: translateY(-10px);
+    }
+    66% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }

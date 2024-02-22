@@ -2,7 +2,7 @@
     --boussole-width: 275px;
     --boussole-height: 150px;
     --top-anchor: 250px;
-    --right-anchor: 0.1%;
+    --right-anchor: 20px;
 }
 
 .boussole-importance {
